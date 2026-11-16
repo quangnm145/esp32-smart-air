@@ -13,6 +13,7 @@
 | `status_led` | Nháy LED trạng thái kết nối. |
 | [bmp180](bmp180/README.md) | Driver BMP180 qua I2C. |
 | [dht11](dht11/README.md) | Driver DHT11; khung dữ liệu đọc trong vùng critical để Wi-Fi không làm sai timing. |
+| [zh03b](zh03b/README.md) | Driver UART C cho ZH03B: tự gửi, hỏi–đáp, ngủ/thức, kiểm tra checksum. |
 
 CMake ở thư mục gốc khai báo `EXTRA_COMPONENT_DIRS` trỏ tới `lib`.
 

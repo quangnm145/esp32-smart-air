@@ -1,0 +1,15 @@
+menu "ZH03B Example"
+
+    config ZH03B_EXAMPLE_TX_GPIO
+        int "ESP32 UART TX GPIO -> ZH03B RXD (pin 4)"
+        range 0 48
+        default 4 if IDF_TARGET_ESP32C3
+        default 17
+
+    config ZH03B_EXAMPLE_RX_GPIO
+        int "ESP32 UART RX GPIO <- ZH03B TXD (pin 5)"
+        range 0 48
+        default 3 if IDF_TARGET_ESP32C3
+        default 16
+
+endmenu
